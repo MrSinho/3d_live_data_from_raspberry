@@ -102,15 +102,28 @@ class Simulation(object):
             except Exception: print("did not save :(")
             time.sleep(.1)
 
+    def check (self):
+        while True:
+            indexcount = 0
+            try:
+                for _ in self.new_points:         
+                    if len(_) == 3: 
+                        self.points_list.append(_)
+                        continue
+                    else: _.pop(indexcount)
+                print("checked")
+            except Exception: print("did not check")
+            time.sleep(.1)
     
     def update(self):
-        indexcount = 0
+        #indexcount = 0
+        #try:
+            #for _ in self.new_points:         
+            #    if len(_) == 3: 
+            #        self.points_list.append(_)
+            #        continue
+            #    else: _.pop(indexcount)
         try:
-            for _ in self.new_points:         
-                if len(_) == 3: 
-                    self.points_list.append(_)
-                    continue
-                else: _.pop(indexcount)
             try: 
                 self.window.removeItem(self.drawpoints)
                 print("deleted previous line")
@@ -122,6 +135,7 @@ class Simulation(object):
             self.drawpoints = gl.GLLinePlotItem(pos=self.points, width=1, antialias=True) #make a variable to store drawing data(specify the points, set antialiasing)
             self.draw() #run the draw function
         except Exception: print("did not draw")
+        
         
     def load(self):
         full_flight_filename = input(str("Write the filename of the saved simulation:\n"))
@@ -154,6 +168,7 @@ class Simulation(object):
             if self.type == "live":
                 with concurrent.futures.ThreadPoolExecutor() as executor:
                     recv_thread = executor.submit(self.recv_data)
+                    check_thread = executor.submit(self.check)
                     save_thread = executor.submit(self.save_all)
                     exec_thread = executor.submit(QtGui.QApplication.instance().exec_())
             elif self.type == "offline":
