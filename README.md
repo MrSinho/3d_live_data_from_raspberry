@@ -34,7 +34,7 @@ git clone https://github.com/adafruit/Adafruit_Python_ADXL345.git
 cd Adafruit_Python_ADXL345
 sudo python setup.py install
 ```
-the [raspberry.py](https://github.com/MrSinho/SpaceProgramm/blob/master/flight_software.py) script will run on the main machine
+the [raspberry.py](https://github.com/MrSinho/SpaceProgramm/blob/master/flight_software.py) script will run on the raspberry
 
 
 
