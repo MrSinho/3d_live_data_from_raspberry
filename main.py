@@ -1,7 +1,6 @@
 import socket
 import numpy as np
 import pyqtgraph as pg
-import numpy as np
 from pyqtgraph.Qt import *
 import pyqtgraph.opengl as gl
 import sys
@@ -104,7 +103,6 @@ class Simulation(object):
             self.new_points = [tuple(self.splitted[i:i+3]) for i in range(0, len(self.splitted), 3)]
             print("received")
             time.sleep(.1)
-            #move on recv_data
 
     def save_all(self):
         while True:
@@ -163,7 +161,7 @@ class Simulation(object):
         self.points_list = list(ast.literal_eval(str(flight_data))) #convert the points list to an array of tuples
         print(self.points_list)
         while True:
-            input_scale_fit = input(str("Insert the scale value, type 1 to keep default."))
+            input_scale_fit = input(str("Insert the scale value, type 1 to keep default. \n"))
             try: 
                 scale_fit = int(input_scale_fit)
                 print(scale_fit)
