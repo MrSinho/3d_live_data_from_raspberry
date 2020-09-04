@@ -16,7 +16,7 @@ The [flight_software.py](https://github.com/MrSinho/SpaceProgramm/blob/master/fl
 
  - Also some useful guides: [PiddlerInTheRoot](https://www.youtube.com/watch?v=NPTK0inTldw&t=428s), [Pi My Life Up](https://www.youtube.com/watch?v=QH1umP-duik&t=104s)
 
-The [raspberry.py](https://github.com/MrSinho/SpaceProgramm/blob/master/flight_software.py) script will run on the raspberry
+The [raspberry.py](https://github.com/MrSinho/SpaceProgramm/blob/master/flight_software.py) script of [this](https://github.com/MrSinho/SpaceProgramm) repository will run on the raspberry
 
 ## Live Data:
 - Edit the [raspberry.py](https://github.com/MrSinho/SpaceProgramm/blob/master/flight_software.py) script and change the host address to the raspberry host address.
