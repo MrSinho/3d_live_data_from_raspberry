@@ -9,34 +9,28 @@ Works on ```Python 3.7.9```
 ```python
 pip install -r requirements.txt
 ```
-the [flight_software.py](https://github.com/MrSinho/SpaceProgramm/blob/master/flight_software.py) script will run on the main machine
+The [flight_software.py](https://github.com/MrSinho/SpaceProgramm/blob/master/flight_software.py) script will run on the main machine
 
 ## Install requirements for raspberry pi
-```python
-sudo raspi-config
-```
-Select "Interfacing Options", "i2c" and enable
+Go here to setup the ADXL345 with the raspberry pi [Adafruit_Python_ADXL345](https://github.com/adafruit/Adafruit_Python_ADXL345)
 
-![](images/interfacing_options.png) ![](images/i2c.png)
+Also some useful guides:
 
-## Connect the ADXL345 sensor to your raspberry
+[PiddlerInTheRoot](https://www.youtube.com/watch?v=NPTK0inTldw&t=428s)
 
-![](images/adxl345_schematics.png)
+[Pi My Life Up](https://www.youtube.com/watch?v=QH1umP-duik&t=104s)
 
-restart ```sudo reboot```
-type ```sudo i2c detect -y 1```, your sensor should be in the grid as number 53
-clone the [Adafruit_Python_ADXL345](https://github.com/adafruit/Adafruit_Python_ADXL345) repository and run the setup script:
-```python
-git clone https://github.com/adafruit/Adafruit_Python_ADXL345.git
-cd Adafruit_Python_ADXL345
-sudo python setup.py install
-```
-the [raspberry.py](https://github.com/MrSinho/SpaceProgramm/blob/master/flight_software.py) script will run on the raspberry
+The [raspberry.py](https://github.com/MrSinho/SpaceProgramm/blob/master/flight_software.py) script will run on the raspberry
 
 ## Live Data:
 Edit the [raspberry.py](https://github.com/MrSinho/SpaceProgramm/blob/master/flight_software.py) script and change the host address to the raspberry host address.
 
-![](images/host.png)
+```python
+s = socket.socket()
+host = "192.168.1." # <-- Edit this
+print(host)
+port = 8080
+```
 
 Run the [raspberry.py](https://github.com/MrSinho/SpaceProgramm/blob/master/flight_software.py) script on your raspberry and the [flight_software.py](https://github.com/MrSinho/SpaceProgramm/blob/master/flight_software.py) on your pc.
 
