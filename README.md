@@ -74,7 +74,7 @@ Insert the scale value, type 1 to keep as default.
 >>> 25
 ```
 
-Done. Now you can see the previous simulations with high performance.
+Done. Now you can load the previous simulations with high performance.
 
 ![](images/real_time_plot.PNG)
 
