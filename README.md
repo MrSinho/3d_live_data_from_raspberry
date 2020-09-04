@@ -1,4 +1,4 @@
-# Plot real time accelleration data from raspberry pi
+# Plot real-time/saved accelleration data from raspberry pi
 
 ![](images/real_time_plot.PNG)
 
@@ -38,5 +38,34 @@ Edit the [raspberry.py](https://github.com/MrSinho/SpaceProgramm/blob/master/fli
 
 ![](images/host.png)
 
-Run the [raspberry.py](https://github.com/MrSinho/SpaceProgramm/blob/master/flight_software.py) script on your raspberry and the [flight_software.py](https://github.com/MrSinho/SpaceProgramm/blob/master/flight_software.py) on your pc:
+Run the [raspberry.py](https://github.com/MrSinho/SpaceProgramm/blob/master/flight_software.py) script on your raspberry and the [flight_software.py](https://github.com/MrSinho/SpaceProgramm/blob/master/flight_software.py) on your pc.
+
+From your pc choose one of the two options: we want a live simulation, so type 1. Then type the host address of your raspberry pi
+
+![](images/choose_what.PNG) ![](images/insert_host.PNG)
+
+As you can see, now it's all working. Your main machine is plotting data from your sensor.
+
+![](images/real_time_plot.PNG)
+
+## Load Saved Data
+If you check the directory of the [flight_software.py](https://github.com/MrSinho/SpaceProgramm/blob/master/flight_software.py), you'll find some files, where the pc has saved the previous simulations, which have the prefix ```full_``` and the extension ```.fsm``` : 
+
+![](images/saved.PNG)
+
+Run the [flight_software.py](https://github.com/MrSinho/SpaceProgramm/blob/master/flight_software.py) file: this time choose the second option.
+
+![](images/choose_what2.PNG)
+
+Enter the filename of the stored simulation you want to load: 
+
+![](images/filename.PNG)
+
+Scale the 3d graph by typing a scale value.
+
+![](images/scale_fit.PNG)
+
+Done. Now you can see the previous simulations with high performance.
+
+![](images/real_time_plot.PNG)
 
