@@ -15,7 +15,7 @@ sudo raspi-config
 ```
 Select "Interfacing Options", "i2c" and enable
 
-![](images/interfacing_options.png) | ![](images/i2c.png)
+![](images/interfacing_options.png) ![](images/i2c.png)
 
 
 
