@@ -9,17 +9,17 @@ Works on ```Python 3.7.9```
 ```python
 pip install -r requirements.txt
 ```
-The [flight_software.py](https://github.com/MrSinho/SpaceProgramm/blob/master/flight_software.py) script will run on the main machine
+The [main.py](https://github.com/MrSinho/SpaceProgramm/blob/master/main.py) script will run on the main machine
 
 ## Install requirements for raspberry pi
  - Go here to setup the ADXL345 with the raspberry pi [Adafruit_Python_ADXL345](https://github.com/adafruit/Adafruit_Python_ADXL345)
 
  - Also some useful guides: [PiddlerInTheRoot](https://www.youtube.com/watch?v=NPTK0inTldw&t=428s), [Pi My Life Up](https://www.youtube.com/watch?v=QH1umP-duik&t=104s)
 
-The [raspberry.py](https://github.com/MrSinho/SpaceProgramm/blob/master/flight_software.py) script of [this](https://github.com/MrSinho/SpaceProgramm) repository will run on the raspberry
+The [raspberry.py](https://github.com/MrSinho/SpaceProgramm/blob/master/main.py) script of [this](https://github.com/MrSinho/SpaceProgramm) repository will run on the raspberry
 
 ## Live Data:
-- Edit the [raspberry.py](https://github.com/MrSinho/SpaceProgramm/blob/master/flight_software.py) script and change the host address to the raspberry host address.
+- Edit the [raspberry.py](https://github.com/MrSinho/SpaceProgramm/blob/master/main.py) script and change the host address to the raspberry host address.
 
 ```python
 s = socket.socket()
@@ -28,7 +28,7 @@ print(host)
 port = 8080
 ```
 
-- Run the [raspberry.py](https://github.com/MrSinho/SpaceProgramm/blob/master/flight_software.py) script on your raspberry and the [flight_software.py](https://github.com/MrSinho/SpaceProgramm/blob/master/flight_software.py) on your pc.
+- Run the [raspberry.py](https://github.com/MrSinho/SpaceProgramm/blob/master/main.py) script on your raspberry and the [main.py](https://github.com/MrSinho/SpaceProgramm/blob/master/main.py) on your pc.
 
 - From your pc choose one from theese two options: we want a live simulation, so type 1. Then type the host address of your raspberry pi
 
@@ -47,11 +47,11 @@ As you can see, now it's all working. Your main machine is plotting data from yo
 ![](images/real_time_plot.PNG)
 
 ## Load Saved Data
-If you check the directory of the [flight_software.py](https://github.com/MrSinho/SpaceProgramm/blob/master/flight_software.py), you'll find some files, where the pc has saved the previous simulations, which have the prefix ```full_``` and the extension ```.fsm``` : 
+If you check the directory of the [main.py](https://github.com/MrSinho/SpaceProgramm/blob/master/main.py), you'll find some files, where the pc has saved the previous simulations, which have the prefix ```full_``` and the extension ```.fsm``` : 
 
 ![](images/saved.PNG)
 
-- Run the [flight_software.py](https://github.com/MrSinho/SpaceProgramm/blob/master/flight_software.py) file: this time choose the second option.
+- Run the [main.py](https://github.com/MrSinho/SpaceProgramm/blob/master/main.py) file: this time choose the second option.
 
 ```python
 Choose what to do:
