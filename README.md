@@ -13,13 +13,13 @@ the [flight_software.py](https://github.com/MrSinho/SpaceProgramm/blob/master/fl
 ```python
 sudo raspi-config
 ```
-### Now select "Interfacing Options"
+Select "Interfacing Options", "i2c" and enable
 
-![](images/interfacing_options.png)
+![](images/interfacing_options.png) | ![](images/i2c.png)
 
-### Select "i2c" and enable
 
-![](images/i2c.png)
+
+
 
 ## Connect the ADXL345 sensor to your raspberry
 ![](images/adxl345_schematics.png)
