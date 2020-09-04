@@ -17,10 +17,6 @@ Select "Interfacing Options", "i2c" and enable
 
 ![](images/interfacing_options.png) ![](images/i2c.png)
 
-
-
-
-
 ## Connect the ADXL345 sensor to your raspberry
 ![](images/adxl345_schematics.png)
 
