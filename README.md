@@ -1,5 +1,7 @@
 # Plot real time accelleration data from raspberry pi
-![](images/real_time_plot.PNG)
+
+![](images/real_time_plot.png)
+
 ## Install requirements on main machine:
 
 Works on ```Python 3.7.9```
