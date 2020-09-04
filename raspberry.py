@@ -6,7 +6,7 @@ import Adafruit_ADXL345
 accel = Adafruit_ADXL345.ADXL345()
 
 s = socket.socket()
-host = "192.168.1.237" # <-- Edit this
+host = "192.168.1." # <-- Edit this
 print(host)
 port = 8080
 
