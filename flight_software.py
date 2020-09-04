@@ -56,8 +56,6 @@ class Simulation(object):
             
 
         elif self.type == "offline":
-            self.window.show()
-            self.three_dim_grid()
             self.load()
 
     def three_dim_grid(self):
@@ -150,6 +148,8 @@ class Simulation(object):
         self.points = np.array(self.points_list)
         self.drawpoints = gl.GLLinePlotItem(pos=self.points, width=1, antialias=True) #make a variable to store drawing data(specify the points, set antialiasing)
         self.window.addItem(self.drawpoints) #run the draw function
+        self.window.show()
+        self.three_dim_grid()
         self.start()
 
 
