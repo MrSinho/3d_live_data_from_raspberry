@@ -32,3 +32,11 @@ cd Adafruit_Python_ADXL345
 sudo python setup.py install
 ```
 the [raspberry.py](https://github.com/MrSinho/SpaceProgramm/blob/master/flight_software.py) script will run on the raspberry
+
+## Live Data:
+Edit the [raspberry.py](https://github.com/MrSinho/SpaceProgramm/blob/master/flight_software.py) script and change the host address to the raspberry host address.
+
+![](images/host.png)
+
+Run the [raspberry.py](https://github.com/MrSinho/SpaceProgramm/blob/master/flight_software.py) script on your raspberry and the [flight_software.py](https://github.com/MrSinho/SpaceProgramm/blob/master/flight_software.py) on your pc:
+
