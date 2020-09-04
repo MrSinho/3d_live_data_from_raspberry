@@ -47,7 +47,7 @@ As you can see, now it's all working. Your main machine is plotting data from yo
 ![](images/real_time_plot.PNG)
 
 ## Load Saved Data
-If you check the directory of the [main.py](https://github.com/MrSinho/SpaceProgramm/blob/master/main.py), you'll find some files, where the pc has saved the previous simulations, which have the prefix ```full_``` and the extension ```.fsm``` : 
+If you check the directory of the [main.py](https://github.com/MrSinho/SpaceProgramm/blob/master/main.py), you'll find some files with the prefix ```full_``` and the extension ```.fsm```. These are the previous simulations that the main program automatically has saved: 
 
 ![](images/saved.PNG)
 
