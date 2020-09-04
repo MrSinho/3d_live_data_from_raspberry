@@ -42,8 +42,16 @@ Run the [raspberry.py](https://github.com/MrSinho/SpaceProgramm/blob/master/flig
 
 From your pc choose one of the two options: we want a live simulation, so type 1. Then type the host address of your raspberry pi
 
-![](images/choose_what.PNG) ![](images/insert_host.PNG)
-
+```python
+Choose what to do:
+[1]: Live Simulation
+[2]: Load Simulation
+>>> 1
+```
+```python
+ Insert the host address of the server
+ >>> 192.168.1.
+```
 As you can see, now it's all working. Your main machine is plotting data from your sensor.
 
 ![](images/real_time_plot.PNG)
@@ -55,15 +63,26 @@ If you check the directory of the [flight_software.py](https://github.com/MrSinh
 
 Run the [flight_software.py](https://github.com/MrSinho/SpaceProgramm/blob/master/flight_software.py) file: this time choose the second option.
 
-![](images/choose_what2.PNG)
+```python
+Choose what to do:
+[1]: Live Simulation
+[2]: Load Simulation
+>>> 2
+```
 
 Enter the filename of the stored simulation you want to load: 
 
-![](images/filename.PNG)
+```python
+Write the filename of the saved simulation:
+>>> full_'2020-09-04 22_13_59_024956'data.fsm
+```
 
 Scale the 3d graph by typing a scale value.
 
-![](images/scale_fit.PNG)
+```python
+Insert the scale value, type 1 to keep as default.
+>>> 25
+```
 
 Done. Now you can see the previous simulations with high performance.
 
