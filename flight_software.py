@@ -59,17 +59,34 @@ class Simulation(object):
             self.load()
 
     def three_dim_grid(self):
-        gx = gl.GLGridItem()
-        gx.rotate(90, 0, 1, 0)
-        gx.translate(-10, 0, 0)
-        self.window.addItem(gx)
-        gy = gl.GLGridItem()
-        gy.rotate(90, 1, 0, 0)
-        gy.translate(0, -10, 0)
-        self.window.addItem(gy)
-        gz = gl.GLGridItem()
-        gz.translate(0, 0, -10)
-        self.window.addItem(gz)
+        g1 = gl.GLGridItem()
+        g1.rotate(90, 0, 1, 0)
+        g1.scale(100, 100, 100)
+        g1.translate(-1000, 0, 0)
+        self.window.addItem(g1)
+        g2 = gl.GLGridItem()
+        g2.rotate(90, 1, 0, 0)
+        g2.scale(100, 100, 100)
+        g2.translate(0, -1000, 0)
+        self.window.addItem(g2)
+        g3 = gl.GLGridItem()
+        g3.scale(100, 100, 100)
+        g3.translate(0, 0, -1000)
+        self.window.addItem(g3)
+        #g4 = gl.GLGridItem()
+        #g4.rotate(90, 0, 1, 0)
+        #g4.scale(1000, 1000, 1000)
+        #g4.translate(10000, 0, 0)
+        #self.window.addItem(g4)
+        #g5 = gl.GLGridItem()
+        #g5.rotate(90, 1, 0, 0)
+        #g5.scale(1000, 1000, 1000)
+        #g5.translate(0, 10000, 0)
+        #self.window.addItem(g5)
+        #g6 = gl.GLGridItem()
+        #g6.scale(1000, 1000, 1000)
+        #g6.translate(0, 0, 10000)
+        #self.window.addItem(g6)
 
     def recv_data(self):
         while True:
@@ -144,6 +161,16 @@ class Simulation(object):
             self.load()
         flight_data = full_flight.read(np.int64(10737418240))
         self.points_list = list(ast.literal_eval(str(flight_data))) #convert the points list to an array of tuples
+        print(self.points_list)
+        while True:
+            input_scale_fit = input(str("Insert the scale value, type 1 to keep default."))
+            try: 
+                scale_fit = int(input_scale_fit)
+                print(scale_fit)
+                break
+            except Exception: continue
+        self.points_list = [_*scale_fit for __ in self.points_list for _ in __]
+        self.points_list = self.new_points = [tuple(self.points_list[i:i+3]) for i in range(0, len(self.points_list), 3)]
         print(self.points_list)
         self.points = np.array(self.points_list)
         self.drawpoints = gl.GLLinePlotItem(pos=self.points, width=1, antialias=True) #make a variable to store drawing data(specify the points, set antialiasing)
