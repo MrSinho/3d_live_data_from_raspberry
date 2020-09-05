@@ -64,7 +64,7 @@ _time = 0.16
 
 unit = 1
 def begin():
-    input_unit = input(str("Choose the accelleration unit: \n [1]: g(=1/9.8 m/s) \n [2]: m/s(=9.8 g)\n"))
+    input_unit = input(str("Choose the accelleration unit: \n [1]: g(=1/9.8 m/s2) \n [2]: m/s2(=9.8 g)\n"))
     if input_unit == "1": unit = 1
     elif input_unit == "2": unit = 9.8
     else: begin()
