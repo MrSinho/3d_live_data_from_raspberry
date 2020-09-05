@@ -75,7 +75,7 @@ while True:
     x, y, z = accel.read()*unit
     x = 1/2*x*(_time*_time)
     y = 1/2*y*(_time*_time)
-    z = 1/2*z*(_time*_time)*-1
+    z = 1/2*z*(_time*_time)
     file = open(f"Data/{datetime}data.spmm", "w")
     data = (f"{x} {y} {z} ")
     file.write(data)
