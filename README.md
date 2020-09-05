@@ -42,6 +42,16 @@ Choose what to do:
  Insert the host address of the server
  >>> 192.168.1.
 ```
+
+- From the [raspberry.py](https://github.com/MrSinho/SpaceProgramm/blob/master/main.py) script, choose the accelleration unit:
+
+```python
+ Choose the accelleration unit:
+ [1]: g(=1/9.8 m/s2)
+ [2]: m/s2(=9.8 g)
+ >>> 2
+```
+
 As you can see, now it's all working. Your main machine is plotting data from your sensor.
 
 ![](images/real_time_plot.PNG)
