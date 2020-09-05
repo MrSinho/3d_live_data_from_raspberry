@@ -4,7 +4,7 @@
 
 ## Install requirements on main machine:
 
-Works on ```Python 3.7.9```
+Works on ```Python 3.7.9``` or later
 
 ```python
 pip install -r requirements.txt
