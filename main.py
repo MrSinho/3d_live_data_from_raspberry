@@ -158,7 +158,7 @@ class Simulation(object):
             print("could not find the file :(")
             self.load()
         flight_data = full_flight.read(np.int64(10737418240))
-        self.points_list = list(ast.literal_eval(str(flight_data))) #convert the points list to an array of tuples
+        self.points_list = list(ast.literal_eval(str(flight_data))) #convert string of list to a list
         print(self.points_list)
         while True:
             input_scale_fit = input(str("Insert the scale value, type 1 to keep default. \n"))
