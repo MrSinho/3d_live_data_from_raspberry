@@ -1,4 +1,4 @@
-# Plot real-time/saved accelleration data from raspberry pi
+# Plot real-time/saved displacement data from raspberry pi
 
 ![](images/real_time_plot.PNG)
 
