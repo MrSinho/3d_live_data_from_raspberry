@@ -7,7 +7,7 @@
 Works on ```Python 3.7.8``` or later
 
 ```python
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 The [main.py](https://github.com/MrSinho/SpaceProgramm/blob/master/main.py) script of this will run on the main machine
 
