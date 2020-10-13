@@ -4,7 +4,7 @@
 
 ## Install requirements on main machine:
 
-Works on ```Python 3.7.8``` or later
+Works on ```Python 3.7.8``` or later. When your virtual environment is activated, open the terminal and type:
 
 ```python
 python -m pip install -r requirements.txt
