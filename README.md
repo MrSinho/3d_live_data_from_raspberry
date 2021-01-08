@@ -88,5 +88,5 @@ Done. Now you can load the previous simulations with high performance.
 
 ![](images/real_time_plot.PNG)
 
-Made by [Sinho Graphics](https://www.instagram.com/sinho_graphics/)
+Made by [MrSinho](https://www.instagram.com/sinho_graphics/)
 
